@@ -45,7 +45,7 @@ export const UserEdit = () => {
   return (
       <Edit>
           <SimpleForm>
-              <ReferenceInput label="Country" source="country" parse={valueToIdObject} format={valueToId} reference="country" sort={{ field: 'name', order: 'ASC' }} required fullWidth>
+              <ReferenceInput label="Country" source="country" reference="country" sort={{ field: 'name', order: 'ASC' }} required fullWidth>
                   <AutocompleteInput optionText="name" filterToQuery={createSearchFilter} parse={valueToIdObject} format={valueToId} fullWidth />
               </ReferenceInput>
           </SimpleForm>
